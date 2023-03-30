@@ -78,6 +78,62 @@
       #navbar ul li { float: none; }
       #navbar li:hover { background-color: #617043; }
       #navbar ul li:hover { background-color: #cacaca; }
+	  
+	  
+	  
+	  
+	  
+	  
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #white;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #f1efde;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #cacaca;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+
+/* Style the close button */
+.topright {
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+.topright:hover {color: #a5260a;}
+
+
+
+
+
+
   </style>
  </head>
  <body link="#7c8084" vlink="#7c8084" alink="#7c8084" bgcolor="black">
@@ -165,14 +221,29 @@
   <table cellspacing="0" id="maket">
    <tr> 
     <td id="leftcol">
-	   <font color="#a5260a" ><strong>Основное:</strong></font>
+	<font color="#a5260a" ><strong>Вся информация по Вселенной Ордена:</strong></font>
 	   <hr>
-       <p><a href="A_None.html"  style="text-decoration: none">Книга</a></p>
-	   <p><a href="A_None.html"  style="text-decoration: none">Истории</a></p>
+	   <p><a href="LA_Book.html"  style="text-decoration: none">Книга</a></p>
+	   <p><a href="LA_Story.html"  style="text-decoration: none">Истории</a></p>
+	   <p><a href="LR_Role_Story.html"  style="text-decoration: none">Истории ролёвок</a></p>
 	   <hr>
-	   <p><a href="B_First_Game.html"  style="text-decoration: none">Игра по вселенной ордена</a></p>
+	   <p><a href="LA_Characters.html"  style="text-decoration: none">Персонажи</a></p>
+	   <p><a href="LA_Character_Data.html"  style="text-decoration: none">Дополнительные данные персонажей</a></p>
 	   <hr>
-	   <p><a href="B_Contacts.html"  style="text-decoration: none">Связаться с нами</a></p>
+	   <p><a href="LA_Universe_Order.html"  style="text-decoration: none">Вселенная и Орден</a></p>
+	   <p><a href="LA_Planets_Worlds.html"  style="text-decoration: none">Планеты и Миры</a></p>
+	   <p><a href="LA_How_W_Work.html"  style="text-decoration: none">Как устроен мир</a></p>
+	   <p><a href="LA_Races_Creatures.html"  style="text-decoration: none">Расы и Существа</a></p>
+	   <p><a href="LA_Magic.html"  style="text-decoration: none">Магия и Способности</a></p>
+	   <p><a href="LA_Artifacts.html"  style="text-decoration: none">Артефакты</a></p>
+	   <hr>
+	   <p><a href="LA_Technologies.html"  style="text-decoration: none">Технологии</a></p>
+	   <p><a href="LA_Transport.html"  style="text-decoration: none">Транспорт</a></p>
+	   <p><a href="LA_Weapon.html"  style="text-decoration: none">Оружие</a></p>
+	   <p><a href="LA_Devices.html"  style="text-decoration: none">Устройства</a></p>
+	   <hr>
+	   <p><a href="LA_Classified.html"  style="text-decoration: none">Засекреченно</a></p>
+	   
        </td>
     
 	
@@ -194,7 +265,35 @@
 	
 	
 	
-	<h2>Идут технические работы. Эта ссылка пока никуда не ведёт.</h2>
+	
+	<h3>Информация недоступна до активации протокола «ARG»</h3>
+	
+	
+
+<script>
+function openC(evt, cName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+
+
+
+	
+	
 
 
 
