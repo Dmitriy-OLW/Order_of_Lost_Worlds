@@ -266,7 +266,78 @@
 	
 	
 	
-<h3>На данный момент раздел не доступен.</h3>
+	
+<h3></h3>
+
+	<div class="tab">
+  <button class="tablinks" onclick="openC(event, 'Gtab')">Кристал Реальности и установка перемещения</button>
+  <button class="tablinks" onclick="openC(event, '1tab')"></button>
+  <button class="tablinks" onclick="openC(event, '2tab')"></button>
+  <button class="tablinks" onclick="openC(event, '3tab')"></button>
+  <button class="tablinks" onclick="openC(event, '4tab')"></button>
+</div>
+
+<div id="Gtab" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">×</span>
+<strong>Кристал Реальности и установка перемещения.</strong></p>
+Кристал реальности состоит из Фантазменных частиц. Предположительно в нём больше всего содержатся Изотопы Убикуем и Нестабильный Изотоп Дракониума, и другие Частицы. Предположительно Кристал по мимо перемещений по реальностям и мирам, может перезагружать реальность.</p>
+Кристалл реальности может вести в разные реальности и создавать якоря реальности. Кристалл реальности прикрепляет к себе якоря. В Главе путешествие по реальностям. Высшие использовали установку, которая с помощью кристалла реальности перемещал героев в разные реальности и в конце, когда герои нашли все медальоны, установка открыла портал к <em><strong>«Воротам Рая»</strong></em>.</p>
+Установка используется для управления Кристаллом. Высшие нашли только способ, описанный в книге, для применения. </p>
+Этот артефакт ещё ни раз сыграет большую роль в истории.</p>
+	
+</div>
+
+
+<div id="1tab" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">×</span>
+
+	
+</div>
+
+<div id="2tab" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">×</span>
+
+
+	
+</div>
+
+<div id="3tab" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">×</span>
+
+
+	
+</div>
+
+<div id="4tab" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">×</span>
+
+	
+</div>
+
+
+
+
+ 
+
+<script>
+function openC(evt, cName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
 	
 	
 
